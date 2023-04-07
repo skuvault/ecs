@@ -1,0 +1,10 @@
+---
+name: canary_logs
+fields:
+  Health_Check:
+    fields: "*"
+  Tenant:
+    fields:
+      "id": {}
+  base:
+    fields: "*"
