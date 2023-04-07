@@ -1,0 +1,2 @@
+# Replace the name of the application you are generating templates for
+python .\scripts\generator.py --ref v8.4.0 --subset .\ecs-definitions\canary\fields\subset.yml --include .\ecs-definitions\skuvault-shared\fields\custom\ .\ecs-definitions\canary\fields\custom\ --out ./ecs-output/canary/
