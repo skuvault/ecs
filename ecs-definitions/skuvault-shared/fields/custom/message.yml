@@ -1,0 +1,17 @@
+---
+- name: Message
+  title: Message
+  description: >
+    Contains details about the log message contents
+  type: group
+  fields:
+    - name: template
+      type: keyword
+      level: custom
+      description: >
+        The message template used when logging
+    - name: text
+      type: text
+      level: custom
+      description: >
+        The content of the log message

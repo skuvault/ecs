@@ -1,3 +1,4 @@
+# MUST include all custom fields added via the --include flag or they will be ignored
 ---
 name: canary_logs
 fields:
@@ -6,5 +7,48 @@ fields:
   Tenant:
     fields:
       "id": {}
+  Message:
+    fields: "*"
+  # The base fields are required (at least @timestamp is)
   base:
+    fields: "*"
+  agent:
+    fields: "*"
+  client:
+    fields: "*"
+  container:
+    fields: "*"
+  data_stream:
+    fields: "*"
+  dll:
+    fields: "*"
+  ecs:
+    fields: "*"
+  error:
+    fields: "*"
+  event:
+    fields: "*"
+  file:
+    fields: "*"
+  host:
+    fields: "*"
+  http:
+    fields: "*"
+  log:
+    fields: "*"
+  os:
+    fields: "*"
+  package:
+    fields: "*"
+  process:
+    fields: "*"
+  server:
+    fields: "*"
+  service:
+    fields: "*"
+  tracing:
+    fields: "*"
+  url:
+    fields: "*"
+  user:
     fields: "*"

@@ -1,0 +1,12 @@
+---
+- name: Health_Check
+  title: Health Check
+  description: >
+    Represents a health check in Canary
+  type: group
+  fields:
+    - name: name
+      type: keyword
+      level: custom
+      description: >
+        The name of the health check
