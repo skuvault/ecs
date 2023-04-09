@@ -12,11 +12,12 @@ pip install -r .\scripts\requirements.txt
 Write-Host "Reading definition files from /ecs-definitions/$definitionsDirectory/"
 
 python .\scripts\generator.py `
-    --ref v8.4.0 `
-    --subset ".\ecs-definitions\$definitionsDirectory\fields\subset.yml" `
-    --include ".\ecs-definitions\skuvault-shared\fields\custom\" ".\ecs-definitions\canary\fields\custom\" `
-    --out ./ecs-output/$definitionsDirectory/
+--ref v8.4.0 `
+--subset ".\ecs-definitions\$definitionsDirectory\fields\subset.yml" `
+--include ".\ecs-definitions\skuvault-shared\fields\custom\" ".\ecs-definitions\canary\fields\custom\" `
+--out ./ecs-output/$definitionsDirectory/
 
+Write-Host "Deactivating Python Virtual Environment and installing requirements..."
 .\py-env\Scripts\deactivate.bat
 
 Write-Host "Generated files written to /ecs-output/$definitionsDirectory/"
