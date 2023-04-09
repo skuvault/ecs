@@ -22,3 +22,6 @@ experimental/generated/ecs/subset
 # Exclude generated files
 ecs-output
 
+# Exclude Virtual Environment folder
+py-env
+
