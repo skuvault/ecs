@@ -17,4 +17,6 @@ python .\scripts\generator.py `
     --include ".\ecs-definitions\skuvault-shared\fields\custom\" ".\ecs-definitions\canary\fields\custom\" `
     --out ./ecs-output/$definitionsDirectory/
 
+.\py-env\Scripts\deactivate.bat
+
 Write-Host "Generated files written to /ecs-output/$definitionsDirectory/"
