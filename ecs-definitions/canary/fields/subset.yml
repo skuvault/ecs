@@ -50,5 +50,3 @@ fields:
     fields: "*"
   url:
     fields: "*"
-  user:
-    fields: "*"
